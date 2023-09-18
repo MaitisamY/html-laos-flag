@@ -6,38 +6,35 @@
   <title>CSS Flag Project</title>
   <style>
     /* Write your CSS Code here */
+    p {
+      font-size: 5rem;
+      margin: 0;
+      text-align: center;
+    }
+    .flag > p {
+      color: #fff;
+    }
     .flag {
     width: 900px;
     height: 600px;
     position: relative;
     background-color: #CE1126;
     }
-    #the-flag {
-      color: #fff;
-      text-align: center;
-      font-size:  80px;
-    }
-    .first-box {
-      position: absolute;
-      background-color: #002868;
+    .flag > div {
       width: 100%;
-      height: 350px;
-      z-index: 1;
-      margin-top: -50px;
-      border: none;
-    }
-    .circle {
+      height: 300px;
+      background-color: #002868;
       position: absolute;
-      border: none;
-      background-color: #fff;
-      border-radius: 50%;
-      padding: 1px 1px;
-      margin-top: 80px;
-      margin-left: 40%;
+      margin-top: 50px;
     }
-    .circle > p {
-      word-wrap: break-word;
-      font-size: 60px;
+    .flag > div > div {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      position: relative;
+      border-radius: 50%;
+      top: 50px;
+      left: 350px;
     }
   </style>
 </head>
@@ -54,9 +51,9 @@ https://appbrewery.github.io/flag-of-laos/
 
 <body>
   <div class="flag">
-    <p id="the-flag">The Flag</p>
-    <div class="first-box">
-      <div class="circle">
+    <p>The Flag</p>
+    <div>
+      <div>
         <p>of Laos</p>
       </div>
     </div>
